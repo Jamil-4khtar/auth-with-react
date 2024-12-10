@@ -13,7 +13,7 @@ function Login({setToken, token}) {
 
     useEffect(() => {
         if (token) {
-            navigate("/dashboard")
+            navigate("/auth-with-react/dashboard")
         }
     })
 
@@ -33,7 +33,7 @@ function Login({setToken, token}) {
             console.log(response.data)
             setToken(response.data.data.token)
             setUser({email: "", password: ""})
-            navigate("/dashboard")
+            navigate("/auth-with-react/dashboard")
         } catch (error) {
             console.log(error);
             setErrorMsg(error.response.data.message)

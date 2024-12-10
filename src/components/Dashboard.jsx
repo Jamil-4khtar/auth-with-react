@@ -14,7 +14,7 @@ const Dashboard = ({token ,setToken}) => {
     useEffect(() => {    
         if (!token) {
             console.log("B")
-            navigate("/login")
+            navigate("/auth-with-react/login")
         }
     
     }, [token])

@@ -15,7 +15,7 @@ const Signup = ({setToken, token}) => {
     useEffect(() => {
         if (token) {
             console.log("inside navigate effect")
-            navigate("/dashboard")
+            navigate("/auth-with-react/dashboard")
         }
     },[token])
     console.log("after navigate effect")
@@ -43,7 +43,7 @@ const Signup = ({setToken, token}) => {
             console.log(response.data)
             setToken(response.data.data.token)
             setuser({name: "", email: "", password: "", cpassword: ""})
-            navigate("/login")
+            navigate("/auth-with-react/login")
         } catch (error) {
             console.log(error);
             setErrorMsg(error.response.data.message)

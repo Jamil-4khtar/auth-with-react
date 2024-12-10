@@ -24,9 +24,9 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Signup setToken={setToken} token={token}/>}></Route>
-        <Route path="/login" element={<Login setToken={setToken} token={token}/>}></Route>
-        <Route path="/dashboard" element={<Dashboard token={token} setToken={setToken} />}></Route>
+        <Route path="/auth-with-react" element={<Signup setToken={setToken} token={token}/>}></Route>
+        <Route path="/auth-with-react/login" element={<Login setToken={setToken} token={token}/>}></Route>
+        <Route path="/auth-with-react/dashboard" element={<Dashboard token={token} setToken={setToken} />}></Route>
 
       </Routes>
     </div>
