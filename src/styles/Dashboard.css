@@ -15,6 +15,7 @@
 @media (max-width: 600px) {
     .comical {
         width: 350px;
+        height: 300px;
     }
 }
 
@@ -142,4 +143,14 @@
     background-color: #ffca28; /* Add a hover effect */
   }
 
-  
+.name {
+    font-size: 20px;
+    color: #867f53;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: glow 2s infinite;
+    position: relative;
+    top: -50px; 
+    left: 10px;   
+}
