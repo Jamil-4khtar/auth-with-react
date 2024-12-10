@@ -1,0 +1,145 @@
+
+.comical {
+    position: relative;
+    width: 800px;
+    height: 200px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+    animation: wiggle 1s infinite;
+}
+@media (max-width: 600px) {
+    .comical {
+        width: 350px;
+    }
+}
+
+.comical:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.comical-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    line-height: 50px;
+    /* height: 100px; */
+    text-align: center;
+}
+
+.comical-content q {
+    font-style: italic;
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    border-left: 5px solid #ccc;
+    animation: bounce 0.5s infinite;
+    background-color: #ffeb3b;
+    /* Add a funny background color */
+    border-radius: 10px;
+    /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Add a shadow */
+}
+
+.comical-content q::before {
+    font-size: 30px;
+    color: #ccc;
+    position: absolute;
+    top: -10px;
+    left: 30px;
+}
+
+.comical-content q::after {
+    font-size: 30px;
+    color: #ccc;
+    position: absolute;
+    bottom: -20px;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.comical-content q:hover {
+    animation: shake 0.3s infinite;
+}
+.logout-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #ffeb3b; /* Add a funny background color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .logout-button:hover {
+    background-color: #ffca28; /* Add a hover effect */
+  }
+
+  
