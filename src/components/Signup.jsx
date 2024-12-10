@@ -78,7 +78,7 @@ const Signup = ({setToken, token}) => {
                     name='cpassword'
                     value={cpassword}
                 />
-                <span>Already have an account? <Link className='goto' to="/login">Click here</Link> </span>
+                <span>Already have an account? <Link className='goto' to="/auth-with-react/login">Click here</Link> </span>
                 <button>Submit</button>
             </form>
         </div>

@@ -61,7 +61,7 @@ function Login({setToken, token}) {
                 value={password}
                 name="password"
             />
-            <span><Link className="goto" to="/">Go to sign up</Link> if you're new here</span>
+            <span><Link className="goto" to="/auth-with-react">Go to sign up</Link> if you're new here</span>
 
             <button>Login</button>
         </form>
